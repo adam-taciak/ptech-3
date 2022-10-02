@@ -1,0 +1,81 @@
+
+        <section>
+          <h2>Własny komponent</h2>
+          <p>Najprostszy komponent w Reactcie jest funkcją która zwraca JSX</p>
+
+          <pre><code data-trim data-line-numbers><script type="text/template">
+function MojKomponent() {
+  return (
+      <h1>Witaj świecie!</h1>
+  );
+}
+
+export default MojKomponent;
+          </script></code></pre>
+        </section>
+
+
+        <section>
+          <h2>Użycie własnego komponentu</h2>
+
+          <pre><code data-trim data-line-numbers><script type="text/template">
+import MojKomponent from './MojKomponent';
+
+function App() {
+  return (
+    <div>
+      <h1>Użycie własnego komponentu</h1>
+      <MojKomponet />
+    </div>
+  );
+}
+          </script></code></pre>
+        </section>
+
+
+        <section>
+          <h2>Komponent z funkcji strzałkowej</h2>
+          <p>Popularnym podejściem jest definiowanie nowych komponentów przy użyciu funkcji strzałkowej:</p>
+
+          <pre><code data-trim data-line-numbers><script type="text/template">
+const MojKomponent = () => {
+  return (
+    <h1>Witaj świecie!</h1>
+  );
+};
+          </script></code></pre>
+        </section>
+
+
+        <section>
+          <h2>Komponent z właściowościami</h2>
+          <p>Do komponentów możemy przekazywać dane wejściwe w postaci atrybutów (ang. props)</p>
+
+          <pre><code data-trim data-line-numbers><script type="text/template">
+const UlubionyKolor = (props) => {
+  const kolor = props.kolor.toUpperCase();
+  return (
+    <h4>Mój ulubiony kolor to {kolor}</h4>
+  );
+};
+
+export default UlubionyKolor;
+          </script></code></pre>
+        </section>
+
+        <section>
+          <h2>Używanie komponentów</h2>
+
+          <pre><code data-trim data-line-numbers="7"><script type="text/template">
+import UlubionyKolor from './UlubionyKolor';
+
+const App = () => {
+  return (
+    <div>
+      <h2>Użycie komponentu UlubionyKolor</h2>
+      <UlubionyKolor kolor="zielony" />
+    </div>
+  );
+};
+          </script></code></pre>
+        </section>

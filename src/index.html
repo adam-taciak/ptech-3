@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Web Academy - P-TECH - klasa 3</title>
+
+    <link rel="stylesheet" href="assets/reveal/reset.css">
+    <link rel="stylesheet" href="assets/reveal/reveal.css">
+    <link rel="stylesheet" href="assets/reveal/theme/beige.css">
+
+		<!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="assets/plugin/highlight/github.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        @@include('./slides/01-organization.html')
+        @@include('./slides/02-react-introduction.html')
+        @@include('./slides/03-create-react-app.html')
+        @@include('./slides/04-react-components.html')
+        @@include('./slides/05-react-hooks.html')
+      </div>
+    </div>
+
+    <script src="assets/reveal/reveal.js"></script>
+    <script src="assets/plugin/notes/notes.js"></script>
+    <script src="assets/plugin/markdown/markdown.js"></script>
+    <script src="assets/plugin/highlight/highlight.js"></script>
+
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "ptech-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:adam-taciak/ptech-3.git",
+  "author": "Adam Taciak <adam.taciak@fujitsu.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-file-include": "^2.3.0"
+  }
+}
